@@ -1,0 +1,71 @@
+.wow {
+  width: 100px;
+}
+textarea.a {
+  font-family: 'Share Tech Mono', monospace;
+  color: #1eff00;
+  background-color: #000000;
+  resize: none;
+  height: 150px;
+  width: 800px;
+}
+textarea.b {
+  font-family: 'Share Tech Mono', monospace;
+  color: #1eff00;
+  background-color: #000000;
+  resize: none;
+  height: 15px;
+  width: 80px;
+  overflow: hidden;
+}
+body {
+  position: static;
+  line-height: 0.5;
+  font-family: 'Share Tech Mono', monospace;
+  color: #1eff00;
+  background-color: #000000;
+}
+button {
+  font-family: 'Share Tech Mono', monospace;
+  background: black;
+  color: #1eff00;
+  border: 1px solid  #545454;
+}
+div {
+  text-align: left;
+  line-height: 1.2;
+  font-size: 14px;
+  width: 300px;
+  border: 2px solid #545454;
+  border-radius: 10px;
+  border-collapse: separate; 
+  perspective: 1px;
+  overflow: hidden;
+}
+div.b {
+  width: 800px;
+  border: 0px solid #545454;
+  overflow: hidden;
+  border-radius: 0px;
+  vertical-align: bottom;
+  display: hidden;
+}
+
+a:link {
+  color: #0091ff;
+}
+
+/* visited link */
+a:visited {
+  color: #00d5ff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #5900ff;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

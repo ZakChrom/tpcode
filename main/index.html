@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TPCode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+  <h1>TPCode ⠀ ⠀ ⠀<a style='font-size: 20px;' href='https://tpcode.calion.repl.co/docs'>Documentaion</a></h1><hr style="height:1px;border-width:0;color:gray;background-color:gray"><br>
+  <!--<p id='n'></p><br>-->
+  <p style='font-size: 20px;' id='t'>Server to connect do:</p>
+  <textarea id='text' class='a'>blendi.calion.repl.co</textarea><br>
+  <button id='new' onclick='activate()'>Login</button><br>
+  <div style='display: none;' class='b' id='place'><br>
+    <div style='display: none;' class='b' id='place-menu'>
+      x <textarea id='place-x' class='b'></textarea>
+      y <textarea id='place-y' class='b'></textarea>
+      id <textarea id='place-id' class='b'></textarea>
+      rot <textarea id='place-rot' class='b'></textarea>
+      heat <textarea id='place-heat' class='b'></textarea>
+    </div>
+    <script>
+      var tgl = true;
+      function place2() {
+        if (tgl == false) {
+          document.getElementById('place-menu').setAttribute("style", "display: none;");
+          place(
+            document.getElementById('place-x').value, 
+            document.getElementById('place-y').value, 
+            document.getElementById('place-id').value, 
+            document.getElementById('place-rot').value, 
+            document.getElementById('place-heat').value
+          )
+          tgl = true
+        } else {
+          document.getElementById('place-menu').setAttribute("style", "display: box;");
+          tgl = false
+        }
+      }
+    </script>
+    <button onclick='place2();'>Place</button>
+  </div>
+  <p style='font-size: 20px;'>Packets<br><div style="width:800px; height:200px; overflow: auto;" id='result'></div><button id='new' onclick='clearPackets()'>Clear</button></p>
+  <script src="cookie.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

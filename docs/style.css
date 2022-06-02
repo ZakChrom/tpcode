@@ -1,0 +1,31 @@
+.wow {
+  width: 100px;
+}
+body {
+  position: static;
+  font-family: 'Share Tech Mono', monospace;
+  color: #1eff00;
+  background-color: #000000;
+}
+pre {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+a:link {
+  color: #0091ff;
+}
+
+/* visited link */
+a:visited {
+  color: #00d5ff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #5900ff;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
