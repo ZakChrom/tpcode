@@ -11,6 +11,7 @@ const btn = document.getElementById('new')
 const placebtn = document.getElementById('place')
 const packets = document.getElementById('text')
 const result_display = document.getElementById('result');
+
 if (getCookie('server') != null) {
   packets.innerHTML = getCookie('server')
 } else {
@@ -39,7 +40,7 @@ function activate() {
   }
   setCookie('server', packets.value, 999999)
   packets.innerHTML = ''
-  btn.innerHTML = "Run"
+  btn.innerHTML = "Send"
   btn.setAttribute("onClick", "javascript: run();");
   placebtn.setAttribute("style", "display: box;");
   ws.addEventListener('message', function (event) {
