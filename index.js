@@ -14,6 +14,12 @@ app.get('/', (req, res) => {
   app.get('/script.js', function(req, res){
       res.sendFile(path.join(__dirname, '/main/script.js'));
   });
+  app.get('/place.js', function(req, res){
+      res.sendFile(path.join(__dirname, '/main/place.js'));
+  });
+  app.get('/cursor.js', function(req, res){
+      res.sendFile(path.join(__dirname, '/main/cursor.js'));
+  });
   app.get('/style.css', function(req, res){
       res.sendFile(path.join(__dirname, '/main/style.css'));
   });
