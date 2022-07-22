@@ -54,6 +54,10 @@ function place(x, y, id, rot, heat) {
   displayClientPacket("place "+x+" "+y+" "+id+" "+rot+" "+heat)
   ws.send(("place "+x+" "+y+" "+id+" "+rot+" "+heat))
 }
+function cursor(x, y) {
+  displayClientPacket("set-cursor "+id+" "+x+" "+y)
+  ws.send(("set-cursor "+id+" "+x+" "+y))
+}
 
 function clearPackets() {
   result_display.innerHTML = ''
