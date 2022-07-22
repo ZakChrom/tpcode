@@ -72,7 +72,7 @@ function login(ws) {
 }
 
 function format(str) {
-    return str.replace(/@(?:(\w+|@)|\|(.*?)\|)/g, (_, $1, $2) => {
+    return str.replace(/@(?:(\w+|@)|\{(.*?)\})/g, (_, $1, $2) => {
         if ($1) {
             switch ($1) {
                 case "r": return Math.floor(Math.random() * 100);
